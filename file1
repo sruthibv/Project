@@ -1,0 +1,13 @@
+import boto3
+Hello this is use case-2 from dev-2
+this is change for practice pull -- rebase
+
+
+client = boto3.client('ec2')
+response = client.run_instances(
+    ImageId='ami-002f6e91abff6eb96',
+    InstanceType='t2.micro',
+    KeyName='demo',
+    MaxCount=1,
+    MinCount=1
+)
